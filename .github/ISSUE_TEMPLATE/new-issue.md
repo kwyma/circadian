@@ -7,5 +7,7 @@ assignees: kwyma
 
 ---
 
-## Acceptance Criteria
+### Additional Description
+
+### Acceptance Criteria
 - [ ] Criteria
