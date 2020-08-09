@@ -1,2 +1,2 @@
-# circaidian
+# circadian
 daily task rhythm
