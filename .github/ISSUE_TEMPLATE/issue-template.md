@@ -1,6 +1,6 @@
 ---
 name: Issue Template
-about: Key Purpose
+about: 'Purpose:'
 title: ''
 labels: ''
 assignees: kwyma
@@ -8,3 +8,4 @@ assignees: kwyma
 ---
 
 ## Acceptance Criteria
+- [ ] Criteria
