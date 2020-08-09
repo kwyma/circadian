@@ -1,6 +1,6 @@
 ---
-name: Issue Name
-about: ''
+name: Issue Template
+about: Key Purpose
 title: ''
 labels: ''
 assignees: kwyma
