@@ -1,3 +1,7 @@
+.Clock__shape--wrapper {
+  position: fixed;
+  left: 30%;
+}
 .Clock__shape {
   background: #cccccc;
   border-radius: 50%;
