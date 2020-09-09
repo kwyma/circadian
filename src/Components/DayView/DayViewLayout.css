@@ -1,4 +1,27 @@
+.DayViewLayout__Layout {
+  display: flex;
+  /* so the clock doesn't cover the timeline shadow */
+  flex-direction: row-reverse;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.DayViewLayout__Timeline--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4dbff;
+  width: 35%;
+  height: 100%;
+  box-shadow: 5px 0px 20px	#C0C0C0;
+}
 .DayViewLayout__Clock--wrapper {
-  position: fixed;
-  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4fff2;
+  width: 65%;
+  height: 100%;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DayViewLayout from './components/DayViewLayout.js';
+import DayViewLayout from './components/DayView/DayViewLayout.js';
 import './App.css';
 
 class App extends Component {
