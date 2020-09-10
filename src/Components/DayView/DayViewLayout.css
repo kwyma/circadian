@@ -5,8 +5,9 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
 }
 .DayViewLayout__Timeline--wrapper {
   display: flex;
@@ -14,7 +15,7 @@
   align-items: center;
   background: #f4dbff;
   width: 35%;
-  height: 100%;
+  min-height: 100%;
   box-shadow: 5px 0px 20px	#C0C0C0;
 }
 .DayViewLayout__Clock--wrapper {
@@ -23,5 +24,5 @@
   align-items: center;
   background: #c4fff2;
   width: 65%;
-  height: 100%;
+  min-height: 100%;
 }

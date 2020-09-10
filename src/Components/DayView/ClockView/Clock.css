@@ -1,6 +1,71 @@
-.Clock__shape {
-  background: #cccccc;
+.Clock__Shape {
+  background: #ccc;
   border-radius: 50%;
   width: 600px;
   height: 600px;
+  position: relative;
+  border: 10px solid #ccc;
+}
+
+.Clock__Shape::after {
+  content: '';
+  position: absolute;
+  background-color: #555;
+  z-index: 11;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.Clock__Hand, .Clock__Number {
+  box-sizing: border-box;
+}
+
+.Clock__Number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.Clock__Number-1 { --rotation: 30deg; }
+.Clock__Number-2 { --rotation: 60deg; }
+.Clock__Number-3 { --rotation: 90deg; }
+.Clock__Number-4 { --rotation: 120deg; }
+.Clock__Number-5 { --rotation: 150deg; }
+.Clock__Number-6 { --rotation: 180deg; }
+.Clock__Number-7 { --rotation: 210deg; }
+.Clock__Number-8 { --rotation: 240deg; }
+.Clock__Number-9 { --rotation: 270deg; }
+.Clock__Number-10 { --rotation: 300deg; }
+.Clock__Number-11 { --rotation: 330deg; }
+
+.Clock__Hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%));
+}
+
+.Clock__Hand-hour {
+  width: 8px;
+  height: 30%;
+  background-color: #555;
+}
+
+.Clock__Hand-minute {
+  width: 4px;
+  height: 40%;
+  background-color: #808080;
 }
