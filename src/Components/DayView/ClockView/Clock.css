@@ -4,7 +4,7 @@
   width: 600px;
   height: 600px;
   position: relative;
-  border: 15px solid #ccc;
+  border: 5px solid #ccc;
 }
 
 .Clock__Shape::after {
@@ -29,7 +29,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   transform: rotate(var(--number-position-rotation));
   color: #555;
   font-size: 0.8rem;
