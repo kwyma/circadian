@@ -1,6 +1,90 @@
-.Clock__shape {
-  background: #cccccc;
+.Clock__Shape {
+  background: #ccc;
   border-radius: 50%;
   width: 600px;
   height: 600px;
+  position: relative;
+  border: 5px solid #ccc;
+}
+
+.Clock__Shape::after {
+  content: '';
+  position: absolute;
+  background-color: #555;
+  z-index: 11;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.Clock__Hand, .Clock__NumberContainer {
+  box-sizing: border-box;
+}
+
+.Clock__NumberContainer {
+  --number-position-rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transform: rotate(var(--number-position-rotation));
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.Clock__NumberContainer-1 { --number-position-rotation: 30deg; }
+.Clock__NumberContainer-2 { --number-position-rotation: 60deg; }
+.Clock__NumberContainer-3 { --number-position-rotation: 90deg; }
+.Clock__NumberContainer-4 { --number-position-rotation: 120deg; }
+.Clock__NumberContainer-5 { --number-position-rotation: 150deg; }
+.Clock__NumberContainer-6 { --number-position-rotation: 180deg; }
+.Clock__NumberContainer-7 { --number-position-rotation: 210deg; }
+.Clock__NumberContainer-8 { --number-position-rotation: 240deg; }
+.Clock__NumberContainer-9 { --number-position-rotation: 270deg; }
+.Clock__NumberContainer-10 { --number-position-rotation: 300deg; }
+.Clock__NumberContainer-11 { --number-position-rotation: 330deg; }
+
+.Clock__Number {
+  --counterrotation: 0;
+  position: absolute;
+  transform: rotate(var(--counterrotation));
+}
+
+.Clock__Number-1 { --counterrotation: -30deg; }
+.Clock__Number-2 { --counterrotation: -60deg; }
+.Clock__Number-3 { --counterrotation: -90deg; }
+.Clock__Number-4 { --counterrotation: -120deg; }
+.Clock__Number-5 { --counterrotation: -150deg; }
+.Clock__Number-6 { --counterrotation: -180deg; }
+.Clock__Number-7 { --counterrotation: -210deg; }
+.Clock__Number-8 { --counterrotation: -240deg; }
+.Clock__Number-9 { --counterrotation: -270deg; }
+.Clock__Number-10 { --counterrotation: -300deg; }
+.Clock__Number-11 { --counterrotation: -330deg; }
+
+.Clock__Hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%));
+}
+
+.Clock__Hand-hour {
+  width: 8px;
+  height: 30%;
+  background-color: #555;
+}
+
+.Clock__Hand-minute {
+  width: 4px;
+  height: 40%;
+  background-color: #808080;
 }
